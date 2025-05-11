@@ -77,3 +77,41 @@
 .hero-para p {
     color: #3e2e25;
 }
+
+
+
+.dishes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    width: 101vw;
+}
+
+.dish-1 img{
+    width: 400px;
+    height: 400px;
+}
+
+.dish-2 img {
+    width: 400px;
+    height: auto;
+}
+.dish-3 img {
+    width: 400px;
+    height: 400px;
+}
+
+/* .dish-4 img{
+    width: 400px;
+    height: 400px;
+} */
+
+
+
+.view img {
+    margin: 100px 0px 101px 0px;
+    padding: 0rem 4rem;
+    width: 1570px;
+    height: 904px;
+}
