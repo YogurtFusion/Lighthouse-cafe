@@ -91,15 +91,19 @@
 .dish-1 img{
     width: 400px;
     height: 400px;
+    object-fit: cover;
 }
 
 .dish-2 img {
     width: 400px;
     height: auto;
+    object-fit: cover;
+    object-position: center;
 }
 .dish-3 img {
     width: 400px;
     height: 400px;
+    object-fit: cover;
 }
 
 /* .dish-4 img{
@@ -109,9 +113,11 @@
 
 
 
-.view img {
+.view img{
     margin: 100px 0px 101px 0px;
     padding: 0rem 4rem;
     width: 1570px;
     height: 904px;
+    object-fit: contain;
+    /* object-position: center; */
 }
