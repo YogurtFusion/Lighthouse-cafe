@@ -9,8 +9,17 @@
 
 body{
     background-color: beige;
-
-
+    animation: fadeIn 1.2s ease-in-out forwards;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 header{
     background-color: transparent;
@@ -36,6 +45,7 @@ nav a {
     font-size: large;
     font-weight: 400;
     color: #3e2723	;
+    
     /* text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); */
 }
 
@@ -60,7 +70,7 @@ nav li {
 
 .hero{
     background-image: url('Hero.avif');
-    height: 600px;
+    height: 100vh;
     background-size: cover;
     padding-top: 200px;
     padding-bottom: 50px;
@@ -207,4 +217,137 @@ nav li {
 .dish-card p {
     font-size: 1rem;
     color: #3e2723;
+}
+
+
+/* css gallery */
+.gallery{
+    margin-top: 100px;
+    padding: 60px;
+    background-color: #f9f9e6;
+    border-radius: 15px;
+    text-align: center;
+}
+.gallery-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding: 60px;
+    box-sizing: border-box;
+  
+    
+}
+
+.gallery-img img{
+    max-width: 600px;
+    max-height: 700px;
+    object-fit: cover;
+    object-position: center center;
+    /* width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center center; */
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.gallery h2{
+    font-family: "Playfair Display", Georgia, 'Times New Roman', serif;
+    font-size: 2.5rem;
+     text-align: center;
+     font-weight: 300;
+     border-bottom: 2px solid  #d9a74d;
+     display: inline-block;
+     padding: 10px;
+     
+}
+
+.gallery-img img:hover{
+    transform: scale(1.03);
+}
+
+/* CTA */
+
+.CTA{
+    background-image: url('CTA_4.jpg');
+    /* max-width: 99%; */
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    object-fit: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    
+}
+
+.CTA .CTA-fill{
+  /* background-color: rgba(221, 190, 123, 0.45);  */
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+   background-color: rgba(73, 47, 23, 0.5);
+
+}
+
+.CTA-text{
+    position: relative;
+    z-index: 10;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    text-align: center;
+}
+
+.CTA-text h2, .CTA-text p{
+    color: white; 
+    /* Classic white */ 
+}
+
+.CTA-text h2 {
+    font-size: 2.8rem;
+
+}
+
+.CTA-text p {
+    font-size: 1.5rem;
+    max-width: 60%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.CTA-btn{
+    padding: 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 30px;
+    text-align: center;
+    position: absolute;
+    z-index: 11;
+    margin-top: 240px;
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+.CTA button:hover{
+    transform: translateY(-5px);
+    background-color: #8B6A3F; 
+    border: none;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+
+}
+.CTA-btn a {
+    text-decoration: none;
+    border: none;
+    word-spacing: 2px;
+    text-align: center;
+    color: white;
+    font-size: 1rem;
 }
