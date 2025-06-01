@@ -55,6 +55,14 @@ nav a:hover {
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
     background-color: transparent;
 }
+nav.scrolled a {
+    color: #d9a74d;
+    transition: color 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+     backdrop-filter: blur(4px);
+}
+
+
 
 
 
@@ -85,6 +93,7 @@ nav li {
     position: relative;
     z-index: 10;
     font-family: "Playfair Display", Georgia, 'Times New Roman', serif;
+    margin-bottom: 100px;
 }
 
 
@@ -350,4 +359,83 @@ nav li {
     text-align: center;
     color: white;
     font-size: 1rem;
+}
+
+
+
+
+/* testimonial section */
+
+.testimonials{
+    padding: 60px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+.testimonials h2{
+    font-size: 3rem;
+    line-height: 1;
+    display: inline;
+    border-bottom: 2px solid  #d9a74d;
+    color: #5d3a00;
+    font-family: "Playfair Display", Georgia, 'Times New Roman', serif;
+}
+
+.review-cards{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    
+}
+
+.review{
+    width: 280px;
+    text-align: center;
+    color: #3e2723;
+    padding: 24px;
+    border-radius: 16px;
+    max-width: 300px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+.review:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+.review p {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.review h4{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.review span{
+    font-size: 14px;
+    line-height: 20px;
+    color: #5d3a00;
+}
+.review img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 8px;
+}
+
+@media (max-width: 768px){
+    .review-cards{
+        flex-direction: column;
+        align-items: center;
+    }
 }
