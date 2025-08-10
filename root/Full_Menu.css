@@ -255,4 +255,71 @@ nav svg {
     display: inline-block;
 }
 
+/* For tablets and smaller screens */
+@media (max-width: 1024px) {
+  .cards-body {
+    grid-template-columns: 1fr 1fr; /* 2 columns instead of 3 */
+    gap: 1.5rem;
+  }
+  .card {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90% !important;
+  }
+  nav {
+    margin: 0 20px;
+  }
 
+  .margin{
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .main{
+    margin-right: 1rem;
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 768px) {
+  .cards-body {
+    grid-template-columns: 1fr; /* Single column */
+  }
+  .navv {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+  nav img {
+    width: 70px;
+    height: 70px;
+  }
+  .mainH h1 {
+    font-size: 2rem;
+  }
+  
+  .margin{
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1rem;
+  }
+}
+
+/* For very small devices */
+@media (max-width: 480px) {
+  .card {
+    padding: 1rem;
+  }
+  .item p {
+    width: 100%;
+  }
+  .mainH p {
+    font-size: 1rem;
+  }
+  
+  .margin{
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1rem;
+  }
+}
