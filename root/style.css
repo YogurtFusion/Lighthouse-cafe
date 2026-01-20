@@ -40,6 +40,15 @@
 .nav a:hover{
     color: rgb(62, 61, 61);
 }
+.ul-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hide-link{
+    display: block;
+}
 
 /* hero section */
 
@@ -120,4 +129,10 @@
     height: 904px;
     object-fit: contain;
     /* object-position: center; */
+}
+
+@media screen and (max-width: 768px){
+    .hide-link{
+        display:none !important;
+    }
 }
