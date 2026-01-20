@@ -18,6 +18,7 @@
 
 .nav-logo{
     padding: 1.5rem 0rem 1.5rem 2rem;
+
 }
 
 .nav-link ul{
@@ -134,5 +135,13 @@
 @media screen and (max-width: 768px){
     .hide-link{
         display:none !important;
+    }
+
+    .nav-logo{
+        width: 80px;
+
+    }
+    .nav-logo img {
+        width: 80px;
     }
 }
