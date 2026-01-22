@@ -1,0 +1,325 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 140px;
+}
+
+:root {
+    --rose-gold: #b76e79;
+}
+
+body {
+    background-color: #fff8f6;
+    color: #614836;
+
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 60px;
+}
+
+nav img {
+    width: 100px;
+    height: 100px;
+}
+
+nav svg {
+    width: 32px;
+    width: 32px;
+}
+
+.head {
+    text-align: center;
+    padding: 80px 20px 40px;
+}
+
+.mainH {
+    max-width: 900px;
+    margin: auto;
+}
+
+.maintop {
+    display: flex;
+    justify-content: center;
+}
+
+.mainH h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.mainH p {
+    line-height: 1.65;
+    font-size: 1.25rem;
+    margin-bottom: 40px;
+    color: #7a5a42;
+    max-width: 42rem;
+    text-align: center;
+    margin: auto;
+
+}
+
+.seprator {
+    height: 5px;
+    margin: auto;
+    background: linear-gradient(to right, #f7c5b3, #b39373);
+    border-radius: 16px;
+    width: 6rem;
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+}
+
+.full {
+    max-width: 99vw;
+    width: 100%;
+    height: 2px;
+}
+.mainH h2 {
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+}
+
+
+
+
+
+.naav{
+    display: block;
+    position: sticky;
+    top: 0;
+    background-color: #fff8f6;
+    padding: 1rem 2rem ;
+    border-bottom: 1px solid #b39373;
+    margin: 2rem 0rem;
+}
+
+
+.navv {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+
+}
+
+.navv a {
+    border-bottom:2px solid  #b39373;
+    text-decoration: none;
+    color: #614836;
+}
+
+
+.cards-body {
+    margin-bottom: 3rem;
+}
+
+
+.card {
+    width: 362px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-left: 60px;
+    margin-bottom: 60px;
+    background-color: #fdf3ec;
+    border-radius: 25px;
+    margin-top: 20px;
+    height: 100%;
+    max-height: fit-content;
+}
+
+.card h2 {
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    color: #b76e79;
+}
+
+.card img {
+    width: 100%;
+    object-fit: cover;
+    height: 233px;
+    border-radius: 14px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 345px;
+    margin-bottom: 18px;
+    border-bottom: 2px solid #f5e1e1;
+    padding-bottom: 10px;
+}
+
+
+.item h4 {
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin: 0px 0px 5px 0px;
+    color: #333;
+}
+
+.item p {
+    width: 260px;
+    margin-top: 6px;
+    font-size: 1rem;
+}
+
+
+.item-start {
+    display: flex;
+    justify-content: flex-start;
+    /* align-items: center; */
+    flex-direction: column;
+}
+
+.price {
+    padding-right: 12px;
+}
+
+.priced {
+    display: flex;
+    flex-direction: column;
+}
+
+.item span {
+    color: #b76e79;
+}
+
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.cards-head h1 {
+    font-size: 1.8rem;
+
+}
+
+.cards-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.veg{
+    max-height: none;
+    height: auto;
+}
+
+
+.max{
+        max-height: -webkit-fill-available;
+    height: 100%;
+}
+
+
+.main{
+    display: flex;
+    flex-direction: column;
+    margin-right: 5rem;
+}
+
+.margin{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+}
+
+
+.head-one{
+    margin: 7rem 0rem 4rem 0rem;
+    text-align: center;
+}
+
+.head-one h1{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    border-bottom: 1px solid #b76e79;
+    display: inline-block;
+}
+
+/* For tablets and smaller screens */
+@media (max-width: 1024px) {
+  .cards-body {
+    grid-template-columns: 1fr 1fr; /* 2 columns instead of 3 */
+    gap: 1.5rem;
+  }
+  .card {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90% !important;
+  }
+  nav {
+    margin: 0 20px;
+  }
+
+  .margin{
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .main{
+    margin-right: 1rem;
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 768px) {
+  .cards-body {
+    grid-template-columns: 1fr; /* Single column */
+  }
+  .navv {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+  nav img {
+    width: 70px;
+    height: 70px;
+  }
+  .mainH h1 {
+    font-size: 2rem;
+  }
+  
+  .margin{
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1rem;
+  }
+}
+
+/* For very small devices */
+@media (max-width: 480px) {
+  .card {
+    padding: 1rem;
+  }
+  .item p {
+    width: 100%;
+  }
+  .mainH p {
+    font-size: 1rem;
+  }
+  
+  .margin{
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1rem;
+  }
+}

@@ -675,7 +675,6 @@ footer a:hover{
 
 @media (max-width: 600px) {
     nav ul {
-        flex-direction: column;
         gap: 1rem;
         align-items: center;
     }

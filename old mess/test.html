@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lighthouse Café - Menu</title>
+  <link rel="stylesheet" href="menu-style.css" />
+  <style>
+    body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background-color: #fff6f3;
+  color: #432818;
+}
+
+.site-header {
+  text-align: center;
+  padding: 40px 20px 20px;
+}
+
+.logo {
+  height: 80px;
+  float: right;
+  margin: 10px 20px;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-size: 1.1em;
+  color: #6f4e37;
+  margin-bottom: 20px;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 30px;
+}
+
+.menu-card {
+  background-color: #fef4ee;
+  border-radius: 20px;
+  width: 300px;
+  padding: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.07);
+}
+
+.menu-img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 1.5em;
+  color: #b35a69;
+  margin-bottom: 20px;
+}
+
+.menu-item {
+  border-top: 1px solid #e1cfcf;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.item-name {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.item-price {
+  float: right;
+  font-weight: bold;
+  color: #7c3c21;
+}
+
+@media (max-width: 768px) {
+  .menu-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-card {
+    width: 90%;
+  }
+
+  .logo {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <img src="logo.png" alt="Lighthouse Café Logo" class="logo"/>
+    <h1>Lighthouse Café</h1>
+    <p class="tagline">Crafted with love, served with warmth.</p>
+  </header>
+
+  <main class="menu-container">
+    <section class="menu-card">
+      <img src="dessert.jpg" alt="Dessert Image" class="menu-img" />
+      <h2 class="section-title">Desserts</h2>
+      <div class="menu-item">
+        <div class="item-name">Chocolate Brownie</div>
+        <div class="item-price">₹179</div>
+        <p>Rich chocolate brownie with roasted almonds.</p>
+      </div>
+      <div class="menu-item">
+        <div class="item-name">Sizzling Brownie with Ice Cream</div>
+        <div class="item-price">₹239</div>
+        <p>A hot-and-cold dessert sensation that’s pure bliss.</p>
+      </div>
+    </section>
+
+    <section class="menu-card">
+      <img src="jarcake.jpg" alt="Jar Cake Image" class="menu-img" />
+      <h2 class="section-title">Jar Cakes</h2>
+      <div class="menu-item">
+        <div class="item-name">Red Velvet Cheese Jar</div>
+        <div class="item-price">₹259</div>
+        <p>Layers of soft cake and golden mini balls of delight.</p>
+      </div>
+    </section>
+
+    <!-- Add more sections similarly -->
+  </main>
+</body>
+</html>

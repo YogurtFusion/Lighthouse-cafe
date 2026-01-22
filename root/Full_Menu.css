@@ -35,11 +35,6 @@ nav svg {
     width: 32px;
 }
 
-
-  .hide-link{
-    display: none !important;
-  }
-
 .head {
     text-align: center;
     padding: 80px 20px 40px;
@@ -96,7 +91,7 @@ nav svg {
 
 
 
-nav{
+.naav{
     display: block;
     position: sticky;
     top: 0;
@@ -107,7 +102,7 @@ nav{
 }
 
 
-nav {
+.navv {
     
     display: flex;
     flex-direction: row;
@@ -116,20 +111,13 @@ nav {
     padding: 0.5rem 1rem;
 
 }
- nav img {
-    max-width: 80px;
- }
-nav a {
+
+.navv a {
     border-bottom:2px solid  #b39373;
     text-decoration: none;
     color: #614836;
 }
 
-nav ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 .cards-body {
     margin-bottom: 3rem;
@@ -290,10 +278,6 @@ nav ul {
   .main{
     margin-right: 1rem;
   }
-
-  .hide-link{
-    display: block;
-  }
 }
 
 /* For mobile screens */
@@ -319,9 +303,6 @@ nav ul {
     align-items: center;
     margin-right: 1rem;
   }
-  .hide-link{
-    display: none;
-  }
 }
 
 /* For very small devices */
@@ -340,8 +321,5 @@ nav ul {
     flex-direction: column;
     align-items: center;
     margin-right: 1rem;
-  }
-  .hide-link{
-    display: none;
   }
 }
